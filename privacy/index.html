@@ -1,8 +1,29 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Pace · Privacy policy</title><link rel="stylesheet" href="../style.css"></head>
-<body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Pace · Privacy policy · Datenschutzerklärung</title>
+<meta name="description" content="Privacy policy for the Data Pace Android app, in English and German. The app works entirely on your phone: no account, no analytics, no server.">
+<link rel="canonical" href="https://tensor-tide.github.io/datapace-site/privacy/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Data Pace · Privacy policy">
+<meta property="og:url" content="https://tensor-tide.github.io/datapace-site/privacy/">
+<meta property="og:image" content="https://tensor-tide.github.io/datapace-site/og.png">
+<link rel="stylesheet" href="../style.css"></head>
+<body class="legal">
+<header class="site-header" id="top">
+  <a class="brand" href="../"><img src="../favicon.svg" alt="" width="28" height="28">Data Pace</a>
+  <nav aria-label="Site"><a href="../">Home</a><a href="../de/" hreflang="de" lang="de">Startseite</a></nav>
+</header>
+<main>
 <div class="eyebrow">Data Pace</div><h1>Privacy policy</h1>
 <p class="lang soft">English · <a href="#de">Deutsch</a> · last updated 2 November 2026</p>
 <p><strong>Data Pace works entirely on this phone. No login, no server, no cloud.</strong> The app has no account, no analytics, no advertising and no third-party software that reports anywhere. It sends nothing about you to us. The one outside service it uses is a public name resolver for your apps' lookups while pacing is on, described below.</p>
+
+<h2 id="controller">Who is responsible</h2>
+<p>The controller within the meaning of the EU General Data Protection Regulation (GDPR) is:</p>
+<!-- TODO: fill in the developer's legal name, postal address and e-mail. -->
+<address><span class="todo">[Full legal name]</span><br><span class="todo">[Street and number]</span><br><span class="todo">[Postcode, city, country]</span><br>E-mail: <span class="todo">[privacy@…]</span></address>
+<p>We have not appointed a data protection officer, as the law does not require one for a project of this kind.</p>
 
 <h2>What the app stores, on your phone only</h2>
 <ul>
@@ -14,6 +35,16 @@
 
 <h2>How pacing works</h2>
 <p>To slow or hold back downloads, Data Pace runs a local VPN on your phone. Android asks for your consent before it starts. The VPN exists only inside the phone: your traffic passes through the app to the internet through your carrier or Wi-Fi, and never through any server of ours. While pacing is on, your apps look up internet names through Google Public DNS (8.8.8.8) instead of your network's own resolver. Data Pace does not change your traffic and stores none of its content. It reads only what it needs to pace: which app opened a connection, the address, the amounts, and how long name lookups take. With Destinations per app on, it also reads the host names, as described above.</p>
+
+<h2>Google Public DNS</h2>
+<p>While pacing is on, your apps' name lookups go to Google Public DNS, a service of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google receives the public IP address your phone uses on the internet and the names your apps look up. Google processes this as its own controller under the <a href="https://developers.google.com/speed/public-dns/privacy" rel="noopener">Google Public DNS privacy notice</a>, which states that logs with the full IP address are deleted within 24 to 48 hours.</p>
+<table>
+<tr><th scope="row">Purpose</th><td>Resolving internet names reliably while the VPN paces traffic, and measuring lookup times so pacing does not slow pages down more than needed.</td></tr>
+<tr><th scope="row">Legal basis</th><td>Art. 6(1)(b) GDPR: it is needed to provide the pacing you switched on.</td></tr>
+<tr><th scope="row">Transfer outside the EU</th><td>Google LLC is certified under the EU–U.S. Data Privacy Framework; the transfer rests on the European Commission's adequacy decision of 10 July 2023 (Art. 45 GDPR).</td></tr>
+<tr><th scope="row">How to stop it</th><td>Switch pacing off. Your apps then use your network's own resolver again.</td></tr>
+</table>
+<p>Data Pace itself sends nothing to Google and never sees what Google stores.</p>
 
 <h2>What leaves your phone, and only when you choose</h2>
 <ul>
@@ -31,20 +62,47 @@
 </ul>
 <p>The app needs internet access only so that your apps' traffic can pass through the local VPN. It makes no connection of its own.</p>
 
+<h2>When you write to us</h2>
+<p>If you send us an e-mail, or choose us as the recipient of the support log, we receive your e-mail address, your message and whatever you attached. We use it only to answer you and to fix the problem you report (Art. 6(1)(b) and (f) GDPR), and delete it once your request is settled, unless a legal duty requires us to keep it longer.</p>
+
+<h2>Google Play</h2>
+<p>You get Data Pace through Google Play, which Google operates under its own <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>. Google gives developers aggregate statistics such as install counts and, from people who allowed Android to share usage and diagnostics, crash reports that do not name you. We use them only to keep the app working.</p>
+
+<h2>This website</h2>
+<p>This website uses no cookies, no analytics, no external fonts and no third-party scripts. It is hosted on GitHub Pages by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. GitHub processes the technical data your browser sends with every request (IP address, time, page requested, browser type) to deliver the page and keep it secure, and keeps these logs under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>. The legal basis is Art. 6(1)(f) GDPR: our legitimate interest in a working, secure website. GitHub is certified under the EU–U.S. Data Privacy Framework, so the transfer to the USA rests on the adequacy decision of 10 July 2023 (Art. 45 GDPR).</p>
+
+<h2>Your rights</h2>
+<p>Under the GDPR you have these rights. Because the app keeps your data only on your phone, you exercise most of them directly in the app; for anything we hold, such as e-mails, write to us at the address above.</p>
+<table>
+<tr><th scope="row">Access, Art. 15</th><td>Learn what data about you is processed. In the app, every count and setting is visible on screen and can be exported.</td></tr>
+<tr><th scope="row">Rectification, Art. 16</th><td>Have incorrect data corrected.</td></tr>
+<tr><th scope="row">Erasure, Art. 17</th><td>Have data deleted. In the app: Reset Data Pace, or uninstall it.</td></tr>
+<tr><th scope="row">Restriction, Art. 18</th><td>Have processing limited while a dispute is resolved.</td></tr>
+<tr><th scope="row">Portability, Art. 20</th><td>Receive your data in a machine-readable format. In the app: the CSV export.</td></tr>
+<tr><th scope="row">Objection, Art. 21</th><td>Object to processing based on legitimate interest.</td></tr>
+<tr><th scope="row">Complaint, Art. 77</th><td>Complain to a data protection supervisory authority, in particular the one where you live or work.</td></tr>
+</table>
+<p>Data Pace makes no automated decisions about you within the meaning of Art. 22 GDPR.</p>
+
 <h2>Deleting your data</h2>
 <p>Settings › Your data, about › Reset Data Pace deletes everything the app keeps: the counts, the destinations, the rules, the budget, the settings and the support log. Uninstalling the app deletes everything it stored, and Android keeps no copy, because the app excludes its data from cloud backup and from device-to-device transfer. A file you exported or an image you shared stays where you put it.</p>
 
 <h2>Children</h2>
-<p>Data Pace is not directed at children and collects no personal information from anyone.</p>
+<p>Data Pace is not directed at children. The app collects no personal information for us from anyone.</p>
 
 <h2>Changes and contact</h2>
-<p>Changes to this policy appear on this page with a new date. For questions, use the developer contact shown on the app's Google Play listing.</p>
+<p>Changes to this policy appear on this page with a new date. For questions, write to the e-mail address under <a href="#controller">Who is responsible</a>; it is also shown on the app's Google Play listing.</p>
 
 <hr>
 <div id="de" lang="de">
 <div class="eyebrow">Data Pace</div><h1>Datenschutzerklärung</h1>
-<p class="lang soft"><a href="#top">English</a> · Deutsch · zuletzt aktualisiert am 2. November 2026</p>
+<p class="lang soft"><a href="#top" hreflang="en" lang="en">English</a> · Deutsch · zuletzt aktualisiert am 2. November 2026</p>
 <p><strong>Data Pace arbeitet vollständig auf diesem Telefon. Kein Login, kein Server, keine Cloud.</strong> Die App hat kein Konto, keine Analyse, keine Werbung und keine Software von Dritten, die irgendwohin berichtet. Sie sendet nichts über dich an uns. Der einzige äußere Dienst, den sie nutzt, ist ein öffentlicher Namensdienst für die Abfragen deiner Apps, solange das Pacing läuft; siehe unten.</p>
+
+<h2 id="verantwortlicher">Verantwortlicher</h2>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<address><span class="todo">[Vollständiger Name]</span><br><span class="todo">[Straße und Hausnummer]</span><br><span class="todo">[PLZ, Ort, Land]</span><br>E-Mail: <span class="todo">[privacy@…]</span></address>
+<p>Einen Datenschutzbeauftragten haben wir nicht benannt, da das Gesetz für ein Projekt dieser Art keinen verlangt.</p>
 
 <h2>Was die App speichert, nur auf deinem Telefon</h2>
 <ul>
@@ -56,6 +114,16 @@
 
 <h2>Wie das Pacing funktioniert</h2>
 <p>Um Downloads zu drosseln oder zurückzuhalten, betreibt Data Pace ein lokales VPN auf deinem Telefon. Android fragt dich um Zustimmung, bevor es startet. Das VPN existiert nur im Telefon: dein Datenverkehr läuft durch die App über deinen Anbieter oder dein WLAN ins Internet und nie über einen Server von uns. Solange das Pacing läuft, fragen deine Apps Internetnamen über Google Public DNS (8.8.8.8) ab statt über den Namensdienst deines Netzes. Data Pace verändert deinen Datenverkehr nicht und speichert nichts von seinem Inhalt. Sie liest nur, was sie zum Drosseln braucht: welche App eine Verbindung geöffnet hat, die Adresse, die Mengen und wie lange Namensabfragen dauern. Mit eingeschalteten Zielen pro App liest sie zusätzlich die Hostnamen, wie oben beschrieben.</p>
+
+<h2>Google Public DNS</h2>
+<p>Solange das Pacing läuft, gehen die Namensabfragen deiner Apps an Google Public DNS, einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google erhält die öffentliche IP-Adresse, mit der dein Telefon im Internet auftritt, und die Namen, die deine Apps abfragen. Google verarbeitet dies als eigener Verantwortlicher nach dem <a href="https://developers.google.com/speed/public-dns/privacy?hl=de" rel="noopener">Datenschutzhinweis von Google Public DNS</a>, wonach Protokolle mit der vollständigen IP-Adresse innerhalb von 24 bis 48 Stunden gelöscht werden.</p>
+<table>
+<tr><th scope="row">Zweck</th><td>Internetnamen zuverlässig auflösen, während das VPN den Datenverkehr drosselt, und die Dauer der Abfragen messen, damit das Pacing Seiten nicht stärker bremst als nötig.</td></tr>
+<tr><th scope="row">Rechtsgrundlage</th><td>Art. 6 Abs. 1 lit. b DSGVO: Es ist nötig, um das Pacing bereitzustellen, das du eingeschaltet hast.</td></tr>
+<tr><th scope="row">Übermittlung außerhalb der EU</th><td>Die Google LLC ist unter dem EU-US-Datenschutzrahmen (Data Privacy Framework) zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023 (Art. 45 DSGVO).</td></tr>
+<tr><th scope="row">So beendest du es</th><td>Schalte das Pacing aus. Deine Apps nutzen dann wieder den Namensdienst deines Netzes.</td></tr>
+</table>
+<p>Data Pace selbst sendet nichts an Google und sieht nie, was Google speichert.</p>
 
 <h2>Was dein Telefon verlässt, und nur wenn du es willst</h2>
 <ul>
@@ -73,13 +141,40 @@
 </ul>
 <p>Internetzugriff braucht die App nur, damit der Datenverkehr deiner Apps durch das lokale VPN laufen kann. Sie baut keine eigene Verbindung auf.</p>
 
+<h2>Wenn du uns schreibst</h2>
+<p>Wenn du uns eine E-Mail schickst oder uns als Empfänger des Support-Protokolls wählst, erhalten wir deine E-Mail-Adresse, deine Nachricht und was du angehängt hast. Wir nutzen das nur, um dir zu antworten und das gemeldete Problem zu beheben (Art. 6 Abs. 1 lit. b und f DSGVO), und löschen es, sobald deine Anfrage erledigt ist, sofern keine gesetzliche Pflicht eine längere Aufbewahrung verlangt.</p>
+
+<h2>Google Play</h2>
+<p>Du erhältst Data Pace über Google Play, das Google nach seiner eigenen <a href="https://policies.google.com/privacy?hl=de" rel="noopener">Datenschutzerklärung</a> betreibt. Google stellt Entwicklern zusammengefasste Statistiken bereit, etwa Installationszahlen, und von Personen, die Android das Teilen von Nutzungs- und Diagnosedaten erlaubt haben, Absturzberichte, die dich nicht namentlich nennen. Wir nutzen sie nur, damit die App funktioniert.</p>
+
+<h2>Diese Website</h2>
+<p>Diese Website verwendet keine Cookies, keine Analyse, keine externen Schriften und keine Skripte von Dritten. Sie wird über GitHub Pages von GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, bereitgestellt. GitHub verarbeitet die technischen Daten, die dein Browser bei jedem Abruf sendet (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browsertyp), um die Seite auszuliefern und sicher zu betreiben, und bewahrt diese Protokolle nach dem <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a> auf. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO: unser berechtigtes Interesse an einer funktionierenden, sicheren Website. GitHub ist unter dem EU-US-Datenschutzrahmen zertifiziert; die Übermittlung in die USA stützt sich auf den Angemessenheitsbeschluss vom 10. Juli 2023 (Art. 45 DSGVO).</p>
+
+<h2>Deine Rechte</h2>
+<p>Nach der DSGVO hast du diese Rechte. Weil die App deine Daten nur auf deinem Telefon behält, übst du die meisten direkt in der App aus; für alles, was wir haben, etwa E-Mails, schreib uns an die Adresse oben.</p>
+<table>
+<tr><th scope="row">Auskunft, Art. 15</th><td>Erfahren, welche Daten über dich verarbeitet werden. In der App ist jede Zählung und Einstellung sichtbar und exportierbar.</td></tr>
+<tr><th scope="row">Berichtigung, Art. 16</th><td>Falsche Daten korrigieren lassen.</td></tr>
+<tr><th scope="row">Löschung, Art. 17</th><td>Daten löschen lassen. In der App: Data Pace zurücksetzen oder deinstallieren.</td></tr>
+<tr><th scope="row">Einschränkung, Art. 18</th><td>Die Verarbeitung einschränken lassen, solange ein Streit geklärt wird.</td></tr>
+<tr><th scope="row">Datenübertragbarkeit, Art. 20</th><td>Deine Daten in einem maschinenlesbaren Format erhalten. In der App: der CSV-Export.</td></tr>
+<tr><th scope="row">Widerspruch, Art. 21</th><td>Einer Verarbeitung auf Grundlage berechtigter Interessen widersprechen.</td></tr>
+<tr><th scope="row">Beschwerde, Art. 77</th><td>Dich bei einer Datenschutz-Aufsichtsbehörde beschweren, insbesondere dort, wo du wohnst oder arbeitest.</td></tr>
+</table>
+<p>Data Pace trifft keine automatisierten Entscheidungen über dich im Sinne von Art. 22 DSGVO.</p>
+
 <h2>Daten löschen</h2>
 <p>Einstellungen › Deine Daten, Info › Data Pace zurücksetzen löscht alles, was die App behält: die Zählungen, die Ziele, die Regeln, das Budget, die Einstellungen und das Support-Protokoll. Das Deinstallieren der App löscht alles, was sie gespeichert hat, und Android behält keine Kopie, weil die App ihre Daten vom Cloud-Backup und von der Übertragung auf ein neues Gerät ausschließt. Eine exportierte Datei oder ein geteiltes Bild bleibt dort, wo du es abgelegt hast.</p>
 
 <h2>Kinder</h2>
-<p>Data Pace richtet sich nicht an Kinder und erhebt von niemandem persönliche Daten.</p>
+<p>Data Pace richtet sich nicht an Kinder. Die App erhebt für uns von niemandem persönliche Daten.</p>
 
 <h2>Änderungen und Kontakt</h2>
-<p>Änderungen an dieser Erklärung erscheinen auf dieser Seite mit neuem Datum. Bei Fragen nutze den Entwicklerkontakt im Google-Play-Eintrag der App.</p>
+<p>Änderungen an dieser Erklärung erscheinen auf dieser Seite mit neuem Datum. Bei Fragen schreib an die E-Mail-Adresse unter <a href="#verantwortlicher">Verantwortlicher</a>; sie steht auch im Google-Play-Eintrag der App.</p>
 </div>
+</main>
+<footer class="site-footer">
+  <a href="../">Data Pace</a>
+  <a href="../impressum/">Legal notice · Impressum</a>
+</footer>
 </body></html>

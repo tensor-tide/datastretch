@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data Pace: damit deine mobilen Daten den ganzen Monat reichen</title>
+<meta name="description" content="Data Pace ist eine Android-App, die deine mobilen Daten so einteilt, dass dein Tarif bis zum nächsten Zyklus reicht. Verbrauch pro App, sanfte Tempolimits, kein Konto, kein Server, keine Cloud.">
+<link rel="canonical" href="https://tensor-tide.github.io/datapace-site/de/">
+<link rel="alternate" hreflang="en" href="https://tensor-tide.github.io/datapace-site/">
+<link rel="alternate" hreflang="de" href="https://tensor-tide.github.io/datapace-site/de/">
+<link rel="alternate" hreflang="x-default" href="https://tensor-tide.github.io/datapace-site/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Data Pace">
+<meta property="og:title" content="Data Pace: damit deine mobilen Daten den ganzen Monat reichen">
+<meta property="og:description" content="Eine Android-App, die deine mobilen Daten einteilt. Läuft vollständig auf deinem Telefon. Kein Login, kein Server, keine Cloud.">
+<meta property="og:url" content="https://tensor-tide.github.io/datapace-site/de/">
+<meta property="og:image" content="https://tensor-tide.github.io/datapace-site/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Data Pace",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Teilt deine mobilen Daten so ein, dass sie den ganzen Monat reichen. Läuft vollständig auf dem Telefon, ohne Konto, Server oder Cloud.",
+  "url": "https://tensor-tide.github.io/datapace-site/de/",
+  "inLanguage": ["de", "en"]
+}
+</script>
+</head>
+<body class="wide">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+  <a class="brand" href="./"><img src="../favicon.svg" alt="" width="28" height="28">Data Pace</a>
+  <nav aria-label="Website">
+    <a href="#so-gehts">So funktioniert's</a>
+    <a href="../privacy/#de">Datenschutz</a>
+    <a href="../" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+
+<main id="main">
+<div class="hero">
+  <div>
+    <div class="eyebrow">Für Android</div>
+    <h1>Damit deine mobilen Daten den ganzen Monat reichen.</h1>
+    <p class="lede">Data Pace behält dein Datenbudget im Blick und drosselt Downloads sanft nach den Regeln, die du für jede App festlegst, sobald du zu schnell verbrauchst. So kommst du mit Daten übrig ans Ende des Zyklus, statt in der dritten Woche gedrosselt zu werden.</p>
+    <div class="cta">
+      <!-- TODO: echte Play-Store-URL eintragen -->
+      <a class="button" href="https://play.google.com/store/apps/details?id=TODO&amp;hl=de">Jetzt bei Google Play</a>
+      <a class="button ghost" href="../privacy/#de">Datenschutzerklärung lesen</a>
+    </div>
+  </div>
+  <figure class="pace-figure">
+    <svg viewBox="0 0 320 200" role="img" aria-labelledby="pace-title pace-desc">
+      <title id="pace-title">Datenverbrauch im Vergleich zum gleichmäßigen Tempo</title>
+      <desc id="pace-desc">Eine gestrichelte Diagonale zeigt ein gleichmäßiges Tempo von null bis zum vollen Budget am Ende des Zyklus. Die Verbrauchslinie steigt anfangs schnell, flacht ab, sobald das Pacing einsetzt, und bleibt unter dem Budget.</desc>
+      <line x1="30" y1="20" x2="300" y2="20" style="stroke:var(--rule)" stroke-width="1"/>
+      <line x1="30" y1="170" x2="300" y2="170" style="stroke:var(--rule)" stroke-width="1"/>
+      <text x="30" y="14" font-size="10" style="fill:var(--soft)">Budget</text>
+      <text x="30" y="188" font-size="10" style="fill:var(--soft)">Tag 1</text>
+      <text x="300" y="188" font-size="10" text-anchor="end" style="fill:var(--soft)">Tag 30</text>
+      <line x1="30" y1="170" x2="300" y2="20" style="stroke:var(--soft)" stroke-width="1.5" stroke-dasharray="4 5"/>
+      <text x="212" y="47" font-size="10" style="fill:var(--soft)" transform="rotate(-29 212 47)">gleichmäßig</text>
+      <path d="M30 170 C55 150 75 118 105 108 S150 100 175 96 S240 78 300 50" fill="none" style="stroke:var(--accent)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M105 108 L175 96" fill="none" style="stroke:var(--accent)" stroke-width="8" stroke-opacity=".18" stroke-linecap="round"/>
+      <text x="140" y="124" font-size="10" text-anchor="middle" style="fill:var(--accent)">gedrosselt</text>
+      <circle cx="300" cy="50" r="4.5" style="fill:var(--accent)"/>
+    </svg>
+    <figcaption>Illustration. Wenn du schneller verbrauchst als gleichmäßig, bremst Data Pace, bis du wieder im Plan bist.</figcaption>
+  </figure>
+</div>
+
+<section id="so-gehts" aria-labelledby="how-h">
+  <h2 id="how-h">So funktioniert's</h2>
+  <ol class="steps">
+    <li><h3>Budget festlegen</h3><p>Gib das Datenvolumen deines Tarifs ein und den Tag, an dem dein Zyklus beginnt.</p></li>
+    <li><h3>Sehen, wohin es geht</h3><p>Data Pace liest Androids eigene Netzwerkstatistik und zeigt, wie viele mobile Daten jede App verbraucht hat, heute und in früheren Zyklen.</p></li>
+    <li><h3>Im Plan bleiben</h3><p>Bist du dem Plan voraus, drosselt ein lokales VPN auf dem Telefon Downloads oder hält sie zurück, nach den Tempolimits und Regeln, die du pro App festlegst.</p></li>
+  </ol>
+</section>
+
+<section aria-labelledby="feat-h">
+  <h2 id="feat-h">Was du bekommst</h2>
+  <div class="features">
+    <div><h3>Verbrauch pro App</h3><p>Mobile Daten pro App, heute und mit 13 Monaten Verlauf, gespeichert auf dem Telefon.</p></div>
+    <div><h3>Tempolimits und Regeln</h3><p>Lege Tempolimits und Regeln für jede App fest, damit die wichtigen weiter funktionieren.</p></div>
+    <div><h3>Hilfreiche Benachrichtigungen</h3><p>Ein Hinweis, wenn sich das Tempo ändert oder ein neuer Zyklus beginnt. Jede Art lässt sich abschalten.</p></div>
+    <div><h3>Ziele pro App</h3><p>Optional: sieh, mit welchen Internet-Hosts jede App spricht und wie viele Daten an jeden gingen.</p></div>
+    <div><h3>Deinen Monat teilen</h3><p>Lass ein Bild deines Monats oder deiner Woche in Daten zeichnen und teile es, mit oder ohne Mengen.</p></div>
+    <div><h3>CSV-Export</h3><p>Speichere deine Zählungen als Tabellendatei in deinem Download-Ordner.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="priv-h">
+  <h2 id="priv-h">Privat von Grund auf</h2>
+  <table class="promise">
+    <thead><tr><th scope="col">Frage</th><th scope="col">Antwort</th><th scope="col">Details</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Konto oder Login?</th><td class="no">Keins</td><td>App öffnen und loslegen.</td></tr>
+      <tr><th scope="row">Analyse oder Werbung?</th><td class="no">Keine</td><td>Keine Software von Dritten, die irgendwohin berichtet.</td></tr>
+      <tr><th scope="row">Ein Server von uns?</th><td class="no">Keiner</td><td>Das VPN existiert nur in deinem Telefon. Dein Datenverkehr läuft nie über uns.</td></tr>
+      <tr><th scope="row">Wo sind meine Daten?</th><td class="yes">Auf deinem Telefon</td><td>Vom Cloud-Backup ausgeschlossen. Zurücksetzen oder Deinstallieren löscht sie.</td></tr>
+      <tr><th scope="row">Äußere Dienste?</th><td class="yes">Einer</td><td>Solange das Pacing läuft, gehen die Namensabfragen deiner Apps an Google Public DNS.</td></tr>
+    </tbody>
+  </table>
+  <p class="soft">Die <a href="../privacy/#de">Datenschutzerklärung</a> beschreibt jedes Detail.</p>
+</section>
+
+<section aria-labelledby="faq-h">
+  <h2 id="faq-h">Fragen</h2>
+  <details><summary>Warum braucht Data Pace ein VPN?</summary><p>Android erlaubt einer App, den Datenverkehr anderer Apps nur über ihre VPN-Schnittstelle zu drosseln. Das VPN von Data Pace läuft vollständig auf dem Telefon: Der Datenverkehr geht durch die App direkt zu deinem Anbieter oder WLAN, nie über einen Server.</p></details>
+  <details><summary>Kann ich weiterhin ein anderes VPN nutzen?</summary><p>Android erlaubt nur ein VPN gleichzeitig. Solange das Pacing läuft, kann also keine andere VPN-App laufen.</p></details>
+  <details><summary>Liest die App meinen Datenverkehr?</summary><p>Keine Inhalte. Sie liest nur, was das Pacing braucht: welche App eine Verbindung geöffnet hat, die Adresse, die Mengen und wie lange Namensabfragen dauern. Hostnamen liest sie nur, wenn du Ziele pro App einschaltest.</p></details>
+  <details><summary>Was passiert nach einem Neustart?</summary><p>War das Pacing an, läuft es nach einem Neustart oder einem App-Update von selbst weiter.</p></details>
+  <details><summary>Zählt die App auch WLAN?</summary><p>Data Pace zählt deine mobilen Daten, denn die begrenzt dein Tarif.</p></details>
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Data Pace</span>
+  <a href="../privacy/#de">Datenschutzerklärung</a>
+  <a href="../impressum/">Impressum</a>
+  <a href="../" hreflang="en" lang="en">English</a>
+</footer>
+</body>
+</html>
