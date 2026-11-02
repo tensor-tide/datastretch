@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Data Pace: make your mobile data last the whole month</title>
-<meta name="description" content="Data Pace is an Android app that paces your mobile data to your plan: lighter video at lower bandwidth, and data-heavy background processes wait for Wi-Fi. No account, no server, no cloud.">
+<title>Data Pace | Manage video streaming and mobile data</title>
+<meta name="description" content="Make your mobile data last with Data Pace for Android. Manage streaming bandwidth, restrict background data use and track your allowance by app.">
 
 <link rel="canonical" href="https://tensor-tide.github.io/datapace-site/">
 <link rel="alternate" hreflang="en" href="https://tensor-tide.github.io/datapace-site/">
@@ -16,8 +16,8 @@
 <meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Data Pace">
-<meta property="og:title" content="Data Pace: make your mobile data last the whole month">
-<meta property="og:description" content="An Android app that paces your mobile data to your plan, entirely on your phone. No login, no server, no cloud.">
+<meta property="og:title" content="Data Pace | Manage video streaming and mobile data">
+<meta property="og:description" content="Manage streaming bandwidth and background data on Android, so your allowance lasts. Data Pace works entirely on this phone. No login, no server, no cloud.">
 <meta property="og:url" content="https://tensor-tide.github.io/datapace-site/">
 <meta property="og:image" content="https://tensor-tide.github.io/datapace-site/og.png">
 <meta property="og:image:width" content="1200">
@@ -33,7 +33,7 @@
   "name": "Data Pace",
   "operatingSystem": "Android",
   "applicationCategory": "UtilitiesApplication",
-  "description": "Paces mobile data to your plan: lower download bandwidth for lighter video, and data-heavy background processes wait for Wi-Fi. Works entirely on the phone, with no account, server or cloud.",
+  "description": "Manages streaming bandwidth and background mobile data so a monthly or prepaid allowance lasts. Works entirely on the phone, with no account, server or cloud.",
   "url": "https://tensor-tide.github.io/datapace-site/",
   "inLanguage": ["en", "de"]
 }
@@ -44,7 +44,7 @@
 <header class="site-header">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28">Data Pace</a>
   <nav aria-label="Site">
-    <a href="#how">How it works</a>
+    <a href="#how-it-works">How it works</a>
     <a href="privacy/">Privacy</a>
     <a href="de/" hreflang="de" lang="de">Deutsch</a>
   </nav>
@@ -54,12 +54,13 @@
 <div class="hero">
   <div>
     <div class="eyebrow">For Android</div>
-    <h1>Make your mobile data last the whole month.</h1>
-    <p class="lede">When your use runs ahead of what your plan allows today, Data Pace lowers the download bandwidth on the phone. Most adaptive streaming players respond to the lower throughput by picking a lighter rendition, which needs less data per minute, and data-heavy background processes can wait for Wi-Fi. Auto mode sets the rate from your remaining budget and days; your per-app rules handle the rest.</p>
+    <h1>Make your mobile data last.</h1>
+    <p class="sub">Manage the data you use for video streaming. Keep background activity on Wi-Fi.</p>
+    <p class="lede">Data Pace helps you stay within a monthly or prepaid data allowance. Auto mode adjusts bandwidth to your remaining budget, while app rules let you choose what can use mobile data in the background.</p>
     <div class="cta">
       <!-- The app is in closed testing; the listing is not public yet. When it is, this becomes a link to https://play.google.com/store/apps/details?id=app.datapace -->
       <span class="button" aria-disabled="true">Coming soon to Google Play</span>
-      <a class="button ghost" href="privacy/">Read the privacy policy</a>
+      <a class="button ghost" href="#how-it-works">How it works</a>
     </div>
   </div>
   <figure class="pace-figure">
@@ -84,53 +85,71 @@
       <text x="140" y="34" font-size="11" font-weight="600" text-anchor="middle" style="fill:var(--paced)">paced</text>
       <circle cx="300" cy="50" r="4.5" style="fill:var(--accent)"/>
     </svg>
-    <figcaption>Illustration. When you run ahead of an even pace, Data Pace lowers the download bandwidth until you are back on pace.</figcaption>
+    <figcaption>Illustration of pacing over one billing cycle. Actual usage depends on your apps, settings and activity.</figcaption>
   </figure>
 </div>
 
-<section id="how" aria-labelledby="how-h">
-  <h2 id="how-h">How it works</h2>
-  <ol class="steps">
-    <li><h3>Set your budget</h3><p>Enter your allowance and its cycle: a monthly plan with its start day, or a prepaid package of 1 to 365 days.</p></li>
-    <li><h3>See where it goes</h3><p>Data Pace reads Android's own network statistics per app and per day, and fills in up to three earlier cycles at setup.</p></li>
-    <li><h3>Stay on pace</h3><p>Auto mode spreads the remaining budget over the remaining days. When today's use runs ahead, a local VPN on the phone lowers the download rate in steps, and your rules decide which apps keep their background data.</p></li>
-  </ol>
-</section>
-
-<section aria-labelledby="feat-h">
-  <h2 id="feat-h">What you get</h2>
-  <div class="features">
-    <div><h3>Lighter video</h3><p>At a lower download rate, most adaptive streaming players pick a lighter rendition, which needs less data per minute. Once you are back on pace, the rate rises again.</p></div>
-    <div><h3>Background on Wi-Fi</h3><p>Set Wi-Fi only or Only while on screen per app, or block background downloads on mobile for all apps. Messaging apps are Essential and keep their background data.</p></div>
-    <div><h3>Auto mode and rules</h3><p>Auto paces in four steps from Fast to Essential, or you set a fixed rate from 8 kbit/s to 1 Gbit/s. Per-app speed limits, priorities and budgets apply to TCP and UDP, QUIC included.</p></div>
-    <div><h3>Per-app counts</h3><p>Data Pace counts mobile data per app and per day from Android's own statistics, keeps 13 months of history on the phone and exports it as CSV.</p></div>
-    <div><h3>Advanced mode</h3><p>It shows throughput, time at each speed, connection setup latency and jitter, DNS lookup times and signs of packet loss, measured from traffic that passes anyway, with no probes.</p></div>
-    <div><h3>Widgets and tile</h3><p>Five home-screen widgets and a Quick Settings tile show where you stand; one widget also sets the speed. A switch for each kind of notification decides what reaches you.</p></div>
+<section aria-labelledby="video-h">
+  <div class="features two">
+    <div>
+      <h2 id="video-h">Use less data when streaming video</h2>
+      <p>Video quality has a direct effect on data use. Adaptive video players can respond to lower bandwidth by choosing a lower bitrate, using less data per minute.</p>
+      <p>Data Pace controls the bandwidth available to your apps. Auto mode adjusts it as you use your allowance, or you can set a limit yourself. The video app chooses the playback quality; results depend on the player and its settings.</p>
+    </div>
+    <div>
+      <h2 id="bg-h">Keep background activity on Wi-Fi</h2>
+      <p>Backups, updates and syncing can use mobile data even when you are not using an app. Set rules to restrict background access on mobile data and leave those activities for Wi-Fi.</p>
+      <p>Choose rules for individual apps or enable the general background restriction. Essential apps remain exempt from that general restriction. You can review and change their priority at any time.</p>
+    </div>
   </div>
 </section>
 
+<section id="how-it-works" aria-labelledby="how-h">
+  <h2 id="how-h">How it works</h2>
+  <ol class="steps">
+    <li><h3>Set your allowance</h3><p>Enter your data budget and renewal date, or the duration of your prepaid package.</p></li>
+    <li><h3>Choose your controls</h3><p>Use Auto mode, set your own bandwidth limits, and choose which apps can use mobile data in the background.</p></li>
+    <li><h3>Follow your usage</h3><p>See which apps use your data and how much remains for the rest of your plan.</p></li>
+  </ol>
+  <p class="soft after">Auto mode divides your remaining data over the days left. It adjusts bandwidth in stages as your use approaches the day's allowance, taking the time of day into account. Using less today leaves more for the days ahead.</p>
+</section>
+
+<section aria-labelledby="feat-h">
+  <h2 id="feat-h">More control when you need it</h2>
+  <div class="features">
+    <div><h3>Per-app rules</h3><p>Set bandwidth limits, priorities, daily budgets and budgets for the current billing cycle or package.</p></div>
+    <div><h3>Flexible plans</h3><p>Use a monthly allowance or a prepaid package of 1 to 365 days. Add top-ups and adjust the count to match your carrier.</p></div>
+    <div><h3>Usage history</h3><p>View data use by app, day, week or month, with 13 months of history and CSV export.</p></div>
+    <div><h3>Connection details</h3><p>Advanced mode shows throughput, connection setup times and DNS response times using existing traffic, without sending test traffic.</p></div>
+    <div><h3>Quick access</h3><p>Check your allowance with home-screen widgets and control pacing from a widget or the Quick Settings tile.</p></div>
+  </div>
+  <p class="soft after">Bandwidth rules cover TCP and UDP traffic, including QUIC. You can choose Auto mode, a preset speed or a custom limit from 8 kbit/s to 1 Gbit/s.</p>
+</section>
+
 <section aria-labelledby="priv-h">
-  <h2 id="priv-h">Private by construction</h2>
-  <table class="promise">
-    <thead><tr><th scope="col">Question</th><th scope="col">Answer</th><th scope="col">Details</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">Account or login?</th><td class="no">None</td><td>You open the app and enter your budget.</td></tr>
-      <tr><th scope="row">Analytics or ads?</th><td class="no">None</td><td>The app contains no analytics, crash-reporting or advertising SDK.</td></tr>
-      <tr><th scope="row">Server of ours?</th><td class="no">None</td><td>The VPN is a local tunnel with no remote endpoint. Your traffic goes straight to your carrier or Wi-Fi.</td></tr>
-      <tr><th scope="row">Where is my data?</th><td class="yes">On your phone</td><td>It is excluded from cloud backup and device transfer. A reset or uninstall deletes it.</td></tr>
-      <tr><th scope="row">Name lookups?</th><td class="yes">Your network's</td><td>They go to your network's own resolvers, as without Data Pace. Only on a network that names none does Data Pace use Google Public DNS.</td></tr>
-    </tbody>
-  </table>
-  <p class="soft">The <a href="privacy/">privacy policy</a> describes every detail.</p>
+  <h2 id="priv-h">Your data stays under your control</h2>
+  <p class="privacy-line">Data Pace works entirely on this phone. No login, no server, no cloud.</p>
+  <p>Data Pace runs locally on your phone. Its VPN does not route your traffic through a Data Pace server.</p>
+  <ul>
+    <li>No account or login.</li>
+    <li>No ads, analytics or crash-reporting SDK.</li>
+    <li>Usage history is stored on your phone and excluded from cloud backup and device transfer.</li>
+    <li>You choose whether to export or share your records.</li>
+    <li>Name lookups go to your network's own resolvers, as they would without Data Pace. Only on a network that names none does Data Pace use Google Public DNS.</li>
+  </ul>
+  <p>The optional Destinations per app feature reads server names from DNS answers and TLS handshakes to show which hosts an app contacts. It is off by default, and those records stay on your phone for the current cycle.</p>
+  <p><a href="privacy/">Read the privacy policy</a></p>
 </section>
 
 <section aria-labelledby="faq-h">
   <h2 id="faq-h">Questions</h2>
-  <details><summary>Why does Data Pace need a VPN?</summary><p>Android lets an app shape other apps' traffic only through its VpnService interface. Data Pace's VPN is a local tunnel, a userspace network stack with a local relay, and has no remote endpoint: traffic leaves the phone through your carrier or Wi-Fi, never through a server of ours.</p></details>
-  <details><summary>Can I still use another VPN?</summary><p>Android runs one VPN at a time. While another VPN app is active, Data Pace keeps counting but cannot pace, and it never takes the connection back by itself.</p></details>
-  <details><summary>Does it read or change my traffic?</summary><p>It never reads or modifies payloads, and it does not compress, transcode or cache. It sees what pacing needs: which app opened a connection, the remote address, the byte counts, and how long connection setup and name lookups take. Server names from DNS answers and TLS handshakes are read only if you switch on Destinations per app, and stay on the phone for the current cycle.</p></details>
-  <details><summary>What happens after a reboot?</summary><p>If pacing was on, it resumes by itself after a reboot or an update of Data Pace.</p></details>
-  <details><summary>Does it count Wi-Fi?</summary><p>Data Pace counts and paces mobile data, since that is what your plan limits; on Wi-Fi it neither counts nor slows anything. If your Wi-Fi is metered too, switch on Treat Wi-Fi as mobile data in Settings; the tunnel then reports Wi-Fi as metered as well.</p></details>
+  <details><summary>Will every video use less data?</summary><p>The effect depends on the video app and its quality settings. Adaptive playback can select a lower bitrate when less bandwidth is available. A player set to a fixed quality may buffer instead. Data Pace does not compress or re-encode video, and its bandwidth limits also affect other traffic covered by the same rules.</p></details>
+  <details><summary>Why does it need a VPN?</summary><p>Data Pace uses Android's VpnService to apply traffic rules locally. The tunnel stays on your device; your apps still connect to their usual services. It does not provide a remote VPN server or change your location.</p></details>
+  <details><summary>Can I use it with another VPN?</summary><p>While another VPN is active, Data Pace can keep counting usage but cannot apply its pacing rules.</p></details>
+  <details><summary>Does it change settings inside other apps?</summary><p>No. Data Pace controls network access and bandwidth. It does not change a video app's quality setting or a backup app's schedule. Each app decides when to resume its work once access is available.</p></details>
+  <details><summary>What happens to an app with a Wi-Fi only rule?</summary><p>Its background mobile access is restricted. By default, opening the app allows limited mobile access at up to 128 kbit/s, subject to any stricter speed limit. To block that access too, enable “Cut off apps on screen too.”</p></details>
+  <details><summary>Does it affect Wi-Fi or uploads?</summary><p>By default, Wi-Fi traffic is neither counted nor paced. You can include it with “Treat Wi-Fi as mobile data.” Uploads count toward your allowance but are not speed-limited; rules that block an app's access can also prevent uploads.</p></details>
+  <details><summary>What else should I know?</summary><p>Hotspot traffic is counted but not paced. Apps in a work profile are outside Data Pace's counting and pacing. Speeds are approximate, and Android's usage figures can differ from your carrier's.</p></details>
 </section>
 </main>
 

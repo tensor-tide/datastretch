@@ -94,6 +94,13 @@ section > h2 { font-size: 24px; color: var(--ink); margin-bottom: 16px; }
 @media (min-width: 600px) { .features { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 860px) { .features { grid-template-columns: repeat(3, 1fr); } }
 .features > div { padding: 18px; border-radius: 16px; border: 1px solid var(--rule); }
+.hero .sub { font-size: 20px; font-weight: 600; color: var(--ink); margin: 12px 0 0; }
+@media (min-width: 860px) { .features.two { grid-template-columns: repeat(2, 1fr); } }
+.features.two > div { padding: 22px; background: var(--surface); }
+.features.two h2 { font-size: 20px; color: var(--ink); margin: 0 0 10px; }
+.features.two p + p { margin-top: 10px; }
+.after { margin: 16px 0 0; font-size: 15px; }
+.privacy-line { font-size: 18px; font-weight: 600; color: var(--ink); padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--accent-tint); border-radius: 0 12px 12px 0; margin: 0 0 16px; }
 
 .promise { width: 100%; border-collapse: collapse; font-size: 15px; }
 .promise th, .promise td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }

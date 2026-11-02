@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Data Pace: damit deine mobilen Daten den ganzen Monat reichen</title>
-<meta name="description" content="Data Pace ist eine Android-App, die deine mobilen Daten nach deinem Tarif einteilt: leichteres Video bei weniger Bandbreite, datenintensive Hintergrundprozesse warten aufs WLAN. Kein Konto, kein Server, keine Cloud.">
+<title>Data Pace | Videostreaming und Datenverbrauch steuern</title>
+<meta name="description" content="Damit dein Datenvolumen länger reicht: Mit Data Pace für Android steuerst du Streaming-Bandbreite und Hintergrunddaten und siehst den Verbrauch pro App.">
 <link rel="canonical" href="https://tensor-tide.github.io/datapace-site/de/">
 <link rel="alternate" hreflang="en" href="https://tensor-tide.github.io/datapace-site/">
 <link rel="alternate" hreflang="de" href="https://tensor-tide.github.io/datapace-site/de/">
@@ -15,8 +15,8 @@
 <meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Data Pace">
-<meta property="og:title" content="Data Pace: damit deine mobilen Daten den ganzen Monat reichen">
-<meta property="og:description" content="Eine Android-App, die deine mobilen Daten nach deinem Tarif einteilt, vollständig auf deinem Handy. Kein Login, kein Server, keine Cloud.">
+<meta property="og:title" content="Data Pace | Videostreaming und Datenverbrauch steuern">
+<meta property="og:description" content="Streaming-Bandbreite und Hintergrunddaten auf Android steuern, damit dein Datenvolumen reicht. Data Pace funktioniert vollständig auf diesem Handy. Kein Login, kein Server, keine Cloud.">
 <meta property="og:url" content="https://tensor-tide.github.io/datapace-site/de/">
 <meta property="og:image" content="https://tensor-tide.github.io/datapace-site/og.png">
 <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
   "name": "Data Pace",
   "operatingSystem": "Android",
   "applicationCategory": "UtilitiesApplication",
-  "description": "Teilt mobile Daten nach deinem Tarif ein: weniger Download-Bandbreite für leichteres Video, datenintensive Hintergrundprozesse warten aufs WLAN. Läuft vollständig auf dem Handy, ohne Konto, Server oder Cloud.",
+  "description": "Steuert Streaming-Bandbreite und mobile Hintergrunddaten, damit das Datenvolumen eines Monatstarifs oder Prepaid-Pakets reicht. Läuft vollständig auf dem Handy, ohne Konto, Server oder Cloud.",
   "url": "https://tensor-tide.github.io/datapace-site/de/",
   "inLanguage": ["de", "en"]
 }
@@ -43,7 +43,7 @@
 <header class="site-header">
   <a class="brand" href="./"><img src="../favicon.svg" alt="" width="28" height="28">Data Pace</a>
   <nav aria-label="Website">
-    <a href="#so-gehts">So funktioniert's</a>
+    <a href="#so-funktioniert-es">So funktioniert es</a>
     <a href="../privacy/#de">Datenschutz</a>
     <a href="../" hreflang="en" lang="en">English</a>
   </nav>
@@ -53,12 +53,13 @@
 <div class="hero">
   <div>
     <div class="eyebrow">Für Android</div>
-    <h1>Damit deine mobilen Daten den ganzen Monat reichen.</h1>
-    <p class="lede">Läuft dein Verbrauch dem voraus, was dein Tarif heute hergibt, senkt Data Pace die Download-Bandbreite auf dem Handy. Die meisten adaptiven Streaming-Player reagieren auf den geringeren Durchsatz mit einer leichteren Qualitätsstufe, die pro Minute weniger Daten braucht, und datenintensive Hintergrundprozesse können aufs WLAN warten. Die Automatik setzt die Rate nach Restbudget und Resttagen; deine Regeln pro App erledigen den Rest.</p>
+    <h1>Damit dein Datenvolumen länger reicht.</h1>
+    <p class="sub">Den Datenverbrauch beim Videostreaming steuern. Hintergrundaktivitäten aufs WLAN beschränken.</p>
+    <p class="lede">Data Pace hilft dir, mit dem Datenvolumen deines Monatstarifs oder Prepaid-Pakets auszukommen. Die Automatik passt die Bandbreite an dein verbleibendes Budget an. Mit Regeln pro App legst du fest, was im Hintergrund mobile Daten nutzen darf.</p>
     <div class="cta">
       <!-- Die App ist im geschlossenen Test; der Eintrag ist noch nicht öffentlich. Danach ein Link auf https://play.google.com/store/apps/details?id=app.datapace&hl=de -->
       <span class="button" aria-disabled="true">Bald bei Google Play</span>
-      <a class="button ghost" href="../privacy/#de">Datenschutzerklärung lesen</a>
+      <a class="button ghost" href="#so-funktioniert-es">So funktioniert es</a>
     </div>
   </div>
   <figure class="pace-figure">
@@ -83,53 +84,71 @@
       <text x="140" y="34" font-size="11" font-weight="600" text-anchor="middle" style="fill:var(--paced)">gedrosselt</text>
       <circle cx="300" cy="50" r="4.5" style="fill:var(--accent)"/>
     </svg>
-    <figcaption>Illustration. Wenn du schneller verbrauchst als gleichmäßig, senkt Data Pace die Download-Bandbreite, bis du wieder im Plan bist.</figcaption>
+    <figcaption>Beispiel für das Pacing über einen Abrechnungszeitraum. Der tatsächliche Verbrauch hängt von deinen Apps, Einstellungen und deiner Nutzung ab.</figcaption>
   </figure>
 </div>
 
-<section id="so-gehts" aria-labelledby="how-h">
-  <h2 id="how-h">So funktioniert's</h2>
-  <ol class="steps">
-    <li><h3>Budget festlegen</h3><p>Gib dein Datenvolumen und seinen Zyklus ein: einen Monatstarif mit Starttag oder ein Prepaid-Paket von 1 bis 365 Tagen.</p></li>
-    <li><h3>Sehen, wohin es geht</h3><p>Data Pace liest Androids eigene Netzwerkstatistik pro App und Tag und ergänzt bei der Einrichtung bis zu drei frühere Zyklen.</p></li>
-    <li><h3>Im Plan bleiben</h3><p>Die Automatik verteilt das Restbudget auf die Resttage. Läuft der heutige Verbrauch voraus, senkt ein lokales VPN auf dem Handy die Download-Rate in Stufen, und deine Regeln entscheiden, welche Apps ihre Hintergrunddaten behalten.</p></li>
-  </ol>
-</section>
-
-<section aria-labelledby="feat-h">
-  <h2 id="feat-h">Was du bekommst</h2>
-  <div class="features">
-    <div><h3>Leichteres Video</h3><p>Bei geringerer Download-Rate wählen die meisten adaptiven Streaming-Player eine leichtere Qualitätsstufe, die pro Minute weniger Daten braucht. Bist du wieder im Plan, steigt die Rate wieder.</p></div>
-    <div><h3>Hintergrund im WLAN</h3><p>Setze „Nur WLAN“ oder „Nur im Vordergrund“ pro App, oder sperre Hintergrund-Downloads im Mobilfunk für alle Apps. Messenger sind unverzichtbar und behalten ihre Hintergrunddaten.</p></div>
-    <div><h3>Automatik und Regeln</h3><p>Die Automatik teilt in vier Stufen von Schnell bis Unverzichtbar ein, oder du setzt eine feste Rate von 8 kbit/s bis 1 Gbit/s. Tempolimits, Prioritäten und Budgets pro App gelten für TCP und UDP, auch für QUIC.</p></div>
-    <div><h3>Verbrauch pro App</h3><p>Data Pace zählt mobile Daten pro App und Tag aus Androids eigener Statistik, behält 13 Monate Verlauf auf dem Handy und exportiert ihn als CSV.</p></div>
-    <div><h3>Erweiterter Modus</h3><p>Er zeigt Durchsatz, Zeit pro Stufe, Latenz beim Verbindungsaufbau und Jitter, DNS-Antwortzeiten und Anzeichen von Paketverlust, gemessen am Verkehr, der ohnehin fließt, ohne eigene Messpakete.</p></div>
-    <div><h3>Widgets und Kachel</h3><p>Fünf Widgets und eine Schnelleinstellungen-Kachel zeigen, wo du stehst; ein Widget setzt auch das Tempo. Ein Schalter pro Benachrichtigungsart entscheidet, was dich erreicht.</p></div>
+<section aria-labelledby="video-h">
+  <div class="features two">
+    <div>
+      <h2 id="video-h">Weniger Daten beim Videostreaming</h2>
+      <p>Die Videoqualität beeinflusst den Datenverbrauch. Adaptive Videoplayer können bei geringerer Bandbreite eine niedrigere Bitrate wählen und dadurch weniger Daten pro Minute verbrauchen.</p>
+      <p>Data Pace begrenzt die Bandbreite, die deinen Apps zur Verfügung steht. Die Automatik passt sie an deinen Verbrauch an, oder du setzt selbst ein Limit. Welche Qualität abgespielt wird, entscheidet die Video-App. Die Wirkung hängt vom Player und seinen Einstellungen ab.</p>
+    </div>
+    <div>
+      <h2 id="bg-h">Hintergrundaktivitäten aufs WLAN beschränken</h2>
+      <p>Backups, Updates und die Synchronisierung können mobile Daten verbrauchen, ohne dass du die App gerade nutzt. Mit Regeln für den Hintergrundzugriff kannst du diese Aktivitäten auf das WLAN beschränken.</p>
+      <p>Lege Regeln für einzelne Apps fest oder aktiviere die allgemeine Hintergrundsperre. Unverzichtbare Apps sind von dieser allgemeinen Sperre ausgenommen. Ihre Priorität kannst du jederzeit prüfen und ändern.</p>
+    </div>
   </div>
 </section>
 
+<section id="so-funktioniert-es" aria-labelledby="how-h">
+  <h2 id="how-h">So funktioniert es</h2>
+  <ol class="steps">
+    <li><h3>Datenbudget eingeben</h3><p>Trage dein Datenvolumen und den Beginn des nächsten Abrechnungszeitraums ein oder die Laufzeit deines Prepaid-Pakets.</p></li>
+    <li><h3>Regeln festlegen</h3><p>Nutze die Automatik, setze eigene Bandbreitenlimits und entscheide, welche Apps im Hintergrund mobile Daten nutzen dürfen.</p></li>
+    <li><h3>Verbrauch verfolgen</h3><p>Sieh nach, welche Apps dein Datenvolumen nutzen und wie viel bis zum Ende des Zeitraums übrig bleibt.</p></li>
+  </ol>
+  <p class="soft after">Die Automatik verteilt das verbleibende Datenvolumen auf die restlichen Tage. Wenn sich dein Verbrauch dem Tagesbudget nähert, passt sie die Bandbreite stufenweise an und berücksichtigt dabei die Tageszeit. Was du heute nicht verbrauchst, bleibt für die nächsten Tage.</p>
+</section>
+
+<section aria-labelledby="feat-h">
+  <h2 id="feat-h">Weitere Möglichkeiten</h2>
+  <div class="features">
+    <div><h3>Regeln pro App</h3><p>Lege Bandbreitenlimits, Prioritäten und Datenbudgets pro Tag oder Abrechnungszeitraum fest.</p></div>
+    <div><h3>Monatstarife und Prepaid</h3><p>Nutze Pakete von 1 bis 365 Tagen, lade Datenvolumen nach und gleiche den Zähler mit deinem Anbieter ab.</p></div>
+    <div><h3>Verbrauchsverlauf</h3><p>Sieh deinen Verbrauch pro App, Tag, Woche oder Monat, mit 13 Monaten Verlauf und CSV-Export.</p></div>
+    <div><h3>Verbindungsdetails</h3><p>Der erweiterte Modus zeigt Durchsatz, Verbindungsaufbauzeiten und DNS-Antwortzeiten anhand des vorhandenen Datenverkehrs, ohne eigene Testdaten zu senden.</p></div>
+    <div><h3>Schneller Zugriff</h3><p>Widgets zeigen dein verbleibendes Budget. Über ein Widget oder die Schnelleinstellungen-Kachel kannst du das Pacing steuern.</p></div>
+  </div>
+  <p class="soft after">Die Bandbreitenregeln gelten für TCP und UDP, einschließlich QUIC. Du kannst die Automatik, eine vorgegebene Geschwindigkeitsstufe oder ein eigenes Limit von 8 kbit/s bis 1 Gbit/s wählen.</p>
+</section>
+
 <section aria-labelledby="priv-h">
-  <h2 id="priv-h">Privat von Grund auf</h2>
-  <table class="promise">
-    <thead><tr><th scope="col">Frage</th><th scope="col">Antwort</th><th scope="col">Details</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">Konto oder Login?</th><td class="no">Keins</td><td>Du öffnest die App und gibst dein Budget ein.</td></tr>
-      <tr><th scope="row">Analyse oder Werbung?</th><td class="no">Keine</td><td>Die App enthält kein SDK für Analyse, Absturzberichte oder Werbung.</td></tr>
-      <tr><th scope="row">Ein Server von uns?</th><td class="no">Keiner</td><td>Das VPN ist ein lokaler Tunnel ohne entfernten Endpunkt. Dein Datenverkehr geht direkt zu deinem Anbieter oder ins WLAN.</td></tr>
-      <tr><th scope="row">Wo sind meine Daten?</th><td class="yes">Auf deinem Handy</td><td>Sie sind von Cloud-Backup und Geräteübertragung ausgeschlossen. Zurücksetzen oder Deinstallieren löscht sie.</td></tr>
-      <tr><th scope="row">Namensabfragen?</th><td class="yes">Bei deinem Netz</td><td>Sie gehen an die Namensserver deines Netzes, wie ohne Data Pace. Nur in einem Netz, das keine nennt, nutzt Data Pace Google Public DNS.</td></tr>
-    </tbody>
-  </table>
-  <p class="soft">Die <a href="../privacy/#de">Datenschutzerklärung</a> beschreibt jedes Detail.</p>
+  <h2 id="priv-h">Deine Daten bleiben unter deiner Kontrolle</h2>
+  <p class="privacy-line">Data Pace funktioniert vollständig auf diesem Handy. Kein Login, kein Server, keine Cloud.</p>
+  <p>Data Pace arbeitet lokal auf deinem Handy. Sein VPN leitet deinen Datenverkehr nicht über einen Server von Data Pace.</p>
+  <ul>
+    <li>Kein Konto und kein Login.</li>
+    <li>Keine Werbung und keine SDKs für Analyse oder Absturzberichte.</li>
+    <li>Dein Verbrauchsverlauf bleibt auf dem Handy und ist von Cloud-Backup und Geräteübertragung ausgeschlossen.</li>
+    <li>Du entscheidest, ob du deine Aufzeichnungen exportierst oder teilst.</li>
+    <li>Namensabfragen gehen an die eigenen Resolver deines Netzes, wie ohne Data Pace. Nur in einem Netz, das keine nennt, nutzt Data Pace Google Public DNS.</li>
+  </ul>
+  <p>Die optionale Funktion „Ziele pro App“ liest Servernamen aus DNS-Antworten und TLS-Handshakes, um die kontaktierten Hosts anzuzeigen. Sie ist standardmäßig ausgeschaltet. Diese Aufzeichnungen bleiben für den laufenden Zyklus auf deinem Handy.</p>
+  <p><a href="../privacy/#de">Datenschutzerklärung lesen</a></p>
 </section>
 
 <section aria-labelledby="faq-h">
   <h2 id="faq-h">Fragen</h2>
-  <details><summary>Warum braucht Data Pace ein VPN?</summary><p>Android lässt eine App den Verkehr anderer Apps nur über die Schnittstelle VpnService steuern. Das VPN von Data Pace ist ein lokaler Tunnel, ein Netzwerk-Stack im Userspace mit lokalem Relay, ohne entfernten Endpunkt: Der Verkehr verlässt das Handy über deinen Anbieter oder dein WLAN, nie über einen Server von uns.</p></details>
-  <details><summary>Kann ich weiterhin ein anderes VPN nutzen?</summary><p>Android führt immer nur ein VPN aus. Solange eine andere VPN-App aktiv ist, zählt Data Pace weiter, kann aber nicht drosseln, und es holt sich die Verbindung nie von selbst zurück.</p></details>
-  <details><summary>Liest oder verändert die App meinen Datenverkehr?</summary><p>Inhalte liest und verändert sie nie, und sie komprimiert, transkodiert und speichert nichts zwischen. Sie sieht, was das Pacing braucht: welche App eine Verbindung geöffnet hat, die Zieladresse, die Datenmengen und wie lange Verbindungsaufbau und Namensabfragen dauern. Servernamen aus DNS-Antworten und TLS-Handshakes liest sie nur, wenn du „Ziele pro App“ einschaltest, und behält sie nur für den laufenden Zyklus auf dem Handy.</p></details>
-  <details><summary>Was passiert nach einem Neustart?</summary><p>War das Pacing an, läuft es nach einem Neustart oder einem Update von Data Pace von selbst weiter.</p></details>
-  <details><summary>Zählt die App auch WLAN?</summary><p>Data Pace zählt und drosselt mobile Daten, denn die begrenzt dein Tarif; im WLAN zählt und bremst es nichts. Ist auch dein WLAN begrenzt, schalte in den Einstellungen „WLAN wie mobile Daten behandeln“ ein; der Tunnel meldet das WLAN dann ebenfalls als getaktet.</p></details>
+  <details><summary>Verbraucht jedes Video weniger Daten?</summary><p>Das hängt von der Video-App und ihren Qualitätseinstellungen ab. Adaptive Wiedergabe kann bei geringerer Bandbreite eine niedrigere Bitrate wählen. Bei fest eingestellter Qualität kann die Wiedergabe stattdessen stocken. Data Pace komprimiert keine Videos und kodiert sie nicht neu. Die Bandbreitenlimits gelten auch für anderen Datenverkehr, der denselben Regeln unterliegt.</p></details>
+  <details><summary>Warum braucht Data Pace ein VPN?</summary><p>Data Pace nutzt Androids VpnService, um die Regeln lokal anzuwenden. Der Tunnel bleibt auf deinem Gerät; deine Apps verbinden sich weiterhin mit ihren gewohnten Diensten. Data Pace bietet keinen entfernten VPN-Server und ändert deinen Standort nicht.</p></details>
+  <details><summary>Kann ich gleichzeitig ein anderes VPN nutzen?</summary><p>Solange ein anderes VPN aktiv ist, kann Data Pace den Verbrauch weiter zählen, aber seine Pacing-Regeln nicht anwenden.</p></details>
+  <details><summary>Ändert Data Pace Einstellungen in anderen Apps?</summary><p>Nein. Data Pace steuert Netzwerkzugriff und Bandbreite. Es ändert weder die Videoqualität in einer anderen App noch deren Backup-Zeitplan. Wann eine App ihre Arbeit fortsetzt, sobald wieder Zugriff besteht, entscheidet sie selbst.</p></details>
+  <details><summary>Was gilt für eine App mit der Regel „Nur WLAN“?</summary><p>Ihr mobiler Hintergrundzugriff wird eingeschränkt. Öffnest du die App, erhält sie standardmäßig begrenzten mobilen Zugriff mit bis zu 128 kbit/s; strengere Tempolimits gelten weiterhin. Mit „Mobile Daten auch für die geöffnete App sperren“ in den Einstellungen sperrst du auch diesen Zugriff.</p></details>
+  <details><summary>Gilt das auch für WLAN und Uploads?</summary><p>Standardmäßig wird WLAN-Verkehr weder gezählt noch gedrosselt. Mit „WLAN wie mobile Daten behandeln“ kannst du ihn einbeziehen. Uploads zählen zum Datenverbrauch, werden aber nicht in der Geschwindigkeit begrenzt. Regeln, die den Zugriff einer App sperren, können auch Uploads verhindern.</p></details>
+  <details><summary>Welche weiteren Grenzen gibt es?</summary><p>Hotspot-Daten werden gezählt, aber nicht gedrosselt. Apps im Arbeitsprofil werden weder gezählt noch gedrosselt. Geschwindigkeiten sind Näherungswerte, und Androids Verbrauchszähler kann vom Zähler deines Anbieters abweichen.</p></details>
 </section>
 </main>
 
