@@ -55,10 +55,10 @@
   <div>
     <div class="eyebrow">For Android</div>
     <h1>Make your mobile data last the whole month.</h1>
-    <p class="lede">Data Pace keeps an eye on your data budget and, when you are using it too fast, gently slows downloads by the rules you set for each app. You reach the end of the cycle with data left, instead of a throttled phone in week three.</p>
+    <p class="lede">Data Pace keeps an eye on your data budget and, when you are using it too fast, gently slows downloads until you are back on pace. Auto mode picks the speed from your budget, and you can set your own rules for each app. You reach the end of the month with data left, instead of a throttled phone in week three.</p>
     <div class="cta">
-      <!-- TODO: replace with the real Play Store URL, e.g. https://play.google.com/store/apps/details?id=YOUR.PACKAGE -->
-      <a class="button" href="https://play.google.com/store/apps/details?id=TODO">Get it on Google Play</a>
+      <!-- The app is in closed testing; the listing is not public yet. When it is, this becomes a link to https://play.google.com/store/apps/details?id=app.datapace -->
+      <span class="button" aria-disabled="true">Coming soon to Google Play</span>
       <a class="button ghost" href="privacy/">Read the privacy policy</a>
     </div>
   </div>
@@ -96,7 +96,7 @@
   <div class="features">
     <div><h3>Per-app counts</h3><p>Mobile data per app, today and over 13 months of history, kept on the phone.</p></div>
     <div><h3>Speed limits and rules</h3><p>Set speed limits and rules for each app, so the ones you care about keep working.</p></div>
-    <div><h3>Helpful notifications</h3><p>A heads-up when speeds change or a new cycle starts. Each kind can be switched off.</p></div>
+    <div><h3>Helpful notifications</h3><p>A heads-up when speeds change or a new cycle starts. You choose which kinds you get.</p></div>
     <div><h3>Destinations per app</h3><p>Optional: see which internet hosts each app talks to, and how much data went to each.</p></div>
     <div><h3>Share your month</h3><p>Draw a picture of your month or week in data and share it, with or without the amounts.</p></div>
     <div><h3>Export to CSV</h3><p>Save your counts as a spreadsheet file in your Downloads folder.</p></div>
@@ -112,7 +112,7 @@
       <tr><th scope="row">Analytics or ads?</th><td class="no">None</td><td>No third-party software that reports anywhere.</td></tr>
       <tr><th scope="row">Server of ours?</th><td class="no">None</td><td>The VPN exists only inside your phone. Your traffic never passes through us.</td></tr>
       <tr><th scope="row">Where is my data?</th><td class="yes">On your phone</td><td>Excluded from cloud backup. Reset or uninstall deletes it.</td></tr>
-      <tr><th scope="row">Outside services?</th><td class="yes">One</td><td>While pacing is on, your apps' name lookups go to Google Public DNS.</td></tr>
+      <tr><th scope="row">Outside services?</th><td class="yes">None</td><td>Your apps keep using your network's own name resolver, as without Data Pace.</td></tr>
     </tbody>
   </table>
   <p class="soft">The <a href="privacy/">privacy policy</a> describes every detail.</p>
@@ -121,10 +121,10 @@
 <section aria-labelledby="faq-h">
   <h2 id="faq-h">Questions</h2>
   <details><summary>Why does Data Pace need a VPN?</summary><p>Android lets an app slow other apps' traffic only through its VPN interface. Data Pace's VPN runs entirely on the phone: traffic passes through the app straight to your carrier or Wi-Fi, never through a server.</p></details>
-  <details><summary>Can I still use another VPN?</summary><p>Android allows one VPN at a time, so while pacing is on, another VPN app cannot run.</p></details>
+  <details><summary>Can I still use another VPN?</summary><p>Android allows one VPN app at a time. While another VPN app is on, Data Pace keeps counting, but it cannot slow anything.</p></details>
   <details><summary>Does it read my traffic?</summary><p>No content. It reads only what pacing needs: which app opened a connection, the address, the amounts, and how long name lookups take. Host names are read only if you switch on Destinations per app.</p></details>
   <details><summary>What happens after a reboot?</summary><p>If pacing was on, it resumes by itself after a reboot or an app update.</p></details>
-  <details><summary>Does it count Wi-Fi?</summary><p>Data Pace counts your mobile data, since that is what your plan limits.</p></details>
+  <details><summary>Does it count Wi-Fi?</summary><p>Data Pace counts your mobile data, since that is what your plan limits. If your Wi-Fi is metered too, you can switch on Treat Wi-Fi as mobile data in Settings.</p></details>
 </section>
 </main>
 

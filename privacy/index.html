@@ -17,7 +17,7 @@
 <main>
 <div class="eyebrow">Data Pace</div><h1>Privacy policy</h1>
 <p class="lang soft">English · <a href="#de">Deutsch</a> · last updated 2 November 2026</p>
-<p><strong>Data Pace works entirely on this phone. No login, no server, no cloud.</strong> The app has no account, no analytics, no advertising and no third-party software that reports anywhere. It sends nothing about you to us. The one outside service it uses is a public name resolver for your apps' lookups while pacing is on, described below.</p>
+<p><strong>Data Pace works entirely on this phone. No login, no server, no cloud.</strong> The app has no account, no analytics, no advertising and no third-party software that reports anywhere. It sends nothing about you to us. Your apps' name lookups keep going to your network's own resolver; only on a network that names no resolver at all does Data Pace fall back to a public one, described below.</p>
 
 <h2 id="controller">Who is responsible</h2>
 <p>The controller within the meaning of the EU General Data Protection Regulation (GDPR) is:</p>
@@ -34,15 +34,15 @@
 </ul>
 
 <h2>How pacing works</h2>
-<p>To slow or hold back downloads, Data Pace runs a local VPN on your phone. Android asks for your consent before it starts. The VPN exists only inside the phone: your traffic passes through the app to the internet through your carrier or Wi-Fi, and never through any server of ours. While pacing is on, your apps look up internet names through Google Public DNS (8.8.8.8) instead of your network's own resolver. Data Pace does not change your traffic and stores none of its content. It reads only what it needs to pace: which app opened a connection, the address, the amounts, and how long name lookups take. With Destinations per app on, it also reads the host names, as described above.</p>
+<p>To slow or hold back downloads, Data Pace runs a local VPN on your phone. Android asks for your consent before it starts. The VPN exists only inside the phone: your traffic passes through the app to the internet through your carrier or Wi-Fi, and never through any server of ours. While pacing is on, your apps keep looking up internet names through your network's own resolver, your carrier's or your Wi-Fi's, as they would without Data Pace. Data Pace does not change your traffic and stores none of its content. It reads only what it needs to pace: which app opened a connection, the address, the amounts, and how long name lookups take. With Destinations per app on, it also reads the host names, as described above.</p>
 
-<h2>Google Public DNS</h2>
-<p>While pacing is on, your apps' name lookups go to Google Public DNS, a service of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google receives the public IP address your phone uses on the internet and the names your apps look up. Google processes this as its own controller under the <a href="https://developers.google.com/speed/public-dns/privacy" rel="noopener">Google Public DNS privacy notice</a>, which states that logs with the full IP address are deleted within 24 to 48 hours.</p>
+<h2>Google Public DNS, only as a fallback</h2>
+<p>Only when the network your phone uses names no resolver at all, and only while pacing is on, do your apps' name lookups go to Google Public DNS instead, a service of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google receives the public IP address your phone uses on the internet and the names your apps look up. Google processes this as its own controller under the <a href="https://developers.google.com/speed/public-dns/privacy" rel="noopener">Google Public DNS privacy notice</a>, which states that logs with the full IP address are deleted within 24 to 48 hours.</p>
 <table>
-<tr><th scope="row">Purpose</th><td>Resolving internet names reliably while the VPN paces traffic, and measuring lookup times so pacing does not slow pages down more than needed.</td></tr>
+<tr><th scope="row">Purpose</th><td>Resolving internet names when the network offers no resolver of its own, so that your apps keep working while the VPN paces traffic.</td></tr>
 <tr><th scope="row">Legal basis</th><td>Art. 6(1)(b) GDPR: it is needed to provide the pacing you switched on.</td></tr>
 <tr><th scope="row">Transfer outside the EU</th><td>Google LLC is certified under the EU–U.S. Data Privacy Framework; the transfer rests on the European Commission's adequacy decision of 10 July 2023 (Art. 45 GDPR).</td></tr>
-<tr><th scope="row">How to stop it</th><td>Switch pacing off. Your apps then use your network's own resolver again.</td></tr>
+<tr><th scope="row">How to stop it</th><td>Switch pacing off. On a network that names a resolver, this never happens.</td></tr>
 </table>
 <p>Data Pace itself sends nothing to Google and never sees what Google stores.</p>
 
@@ -74,7 +74,7 @@
 <h2>Your rights</h2>
 <p>Under the GDPR you have these rights. Because the app keeps your data only on your phone, you exercise most of them directly in the app; for anything we hold, such as e-mails, write to us at the address above.</p>
 <table>
-<tr><th scope="row">Access, Art. 15</th><td>Learn what data about you is processed. In the app, every count and setting is visible on screen and can be exported.</td></tr>
+<tr><th scope="row">Access, Art. 15</th><td>Learn what data about you is processed. In the app, every count and setting is visible on screen, and the counts can be exported.</td></tr>
 <tr><th scope="row">Rectification, Art. 16</th><td>Have incorrect data corrected.</td></tr>
 <tr><th scope="row">Erasure, Art. 17</th><td>Have data deleted. In the app: Reset Data Pace, or uninstall it.</td></tr>
 <tr><th scope="row">Restriction, Art. 18</th><td>Have processing limited while a dispute is resolved.</td></tr>
@@ -97,7 +97,7 @@
 <div id="de" lang="de">
 <div class="eyebrow">Data Pace</div><h1>Datenschutzerklärung</h1>
 <p class="lang soft"><a href="#top" hreflang="en" lang="en">English</a> · Deutsch · zuletzt aktualisiert am 2. November 2026</p>
-<p><strong>Data Pace arbeitet vollständig auf diesem Telefon. Kein Login, kein Server, keine Cloud.</strong> Die App hat kein Konto, keine Analyse, keine Werbung und keine Software von Dritten, die irgendwohin berichtet. Sie sendet nichts über dich an uns. Der einzige äußere Dienst, den sie nutzt, ist ein öffentlicher Namensdienst für die Abfragen deiner Apps, solange das Pacing läuft; siehe unten.</p>
+<p><strong>Data Pace arbeitet vollständig auf diesem Telefon. Kein Login, kein Server, keine Cloud.</strong> Die App hat kein Konto, keine Analyse, keine Werbung und keine Software von Dritten, die irgendwohin berichtet. Sie sendet nichts über dich an uns. Die Namensabfragen deiner Apps gehen weiter an den Namensdienst deines Netzes; nur in einem Netz, das gar keinen nennt, weicht Data Pace auf einen öffentlichen aus, siehe unten.</p>
 
 <h2 id="verantwortlicher">Verantwortlicher</h2>
 <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
@@ -113,15 +113,15 @@
 </ul>
 
 <h2>Wie das Pacing funktioniert</h2>
-<p>Um Downloads zu drosseln oder zurückzuhalten, betreibt Data Pace ein lokales VPN auf deinem Telefon. Android fragt dich um Zustimmung, bevor es startet. Das VPN existiert nur im Telefon: dein Datenverkehr läuft durch die App über deinen Anbieter oder dein WLAN ins Internet und nie über einen Server von uns. Solange das Pacing läuft, fragen deine Apps Internetnamen über Google Public DNS (8.8.8.8) ab statt über den Namensdienst deines Netzes. Data Pace verändert deinen Datenverkehr nicht und speichert nichts von seinem Inhalt. Sie liest nur, was sie zum Drosseln braucht: welche App eine Verbindung geöffnet hat, die Adresse, die Mengen und wie lange Namensabfragen dauern. Mit eingeschalteten Zielen pro App liest sie zusätzlich die Hostnamen, wie oben beschrieben.</p>
+<p>Um Downloads zu drosseln oder zurückzuhalten, betreibt Data Pace ein lokales VPN auf deinem Telefon. Android fragt dich um Zustimmung, bevor es startet. Das VPN existiert nur im Telefon: dein Datenverkehr läuft durch die App über deinen Anbieter oder dein WLAN ins Internet und nie über einen Server von uns. Solange das Pacing läuft, fragen deine Apps Internetnamen weiter über den Namensdienst deines Netzes ab, den deines Anbieters oder deines WLANs, wie ohne Data Pace. Data Pace verändert deinen Datenverkehr nicht und speichert nichts von seinem Inhalt. Sie liest nur, was sie zum Drosseln braucht: welche App eine Verbindung geöffnet hat, die Adresse, die Mengen und wie lange Namensabfragen dauern. Mit eingeschalteten Zielen pro App liest sie zusätzlich die Hostnamen, wie oben beschrieben.</p>
 
-<h2>Google Public DNS</h2>
-<p>Solange das Pacing läuft, gehen die Namensabfragen deiner Apps an Google Public DNS, einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google erhält die öffentliche IP-Adresse, mit der dein Telefon im Internet auftritt, und die Namen, die deine Apps abfragen. Google verarbeitet dies als eigener Verantwortlicher nach dem <a href="https://developers.google.com/speed/public-dns/privacy?hl=de" rel="noopener">Datenschutzhinweis von Google Public DNS</a>, wonach Protokolle mit der vollständigen IP-Adresse innerhalb von 24 bis 48 Stunden gelöscht werden.</p>
+<h2>Google Public DNS, nur als Ausweichlösung</h2>
+<p>Nur wenn das Netz, das dein Telefon nutzt, gar keinen Namensdienst nennt, und nur solange das Pacing läuft, gehen die Namensabfragen deiner Apps stattdessen an Google Public DNS, einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google erhält die öffentliche IP-Adresse, mit der dein Telefon im Internet auftritt, und die Namen, die deine Apps abfragen. Google verarbeitet dies als eigener Verantwortlicher nach dem <a href="https://developers.google.com/speed/public-dns/privacy?hl=de" rel="noopener">Datenschutzhinweis von Google Public DNS</a>, wonach Protokolle mit der vollständigen IP-Adresse innerhalb von 24 bis 48 Stunden gelöscht werden.</p>
 <table>
-<tr><th scope="row">Zweck</th><td>Internetnamen zuverlässig auflösen, während das VPN den Datenverkehr drosselt, und die Dauer der Abfragen messen, damit das Pacing Seiten nicht stärker bremst als nötig.</td></tr>
+<tr><th scope="row">Zweck</th><td>Internetnamen auflösen, wenn das Netz keinen eigenen Namensdienst anbietet, damit deine Apps weiter funktionieren, während das VPN den Datenverkehr drosselt.</td></tr>
 <tr><th scope="row">Rechtsgrundlage</th><td>Art. 6 Abs. 1 lit. b DSGVO: Es ist nötig, um das Pacing bereitzustellen, das du eingeschaltet hast.</td></tr>
 <tr><th scope="row">Übermittlung außerhalb der EU</th><td>Die Google LLC ist unter dem EU-US-Datenschutzrahmen (Data Privacy Framework) zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023 (Art. 45 DSGVO).</td></tr>
-<tr><th scope="row">So beendest du es</th><td>Schalte das Pacing aus. Deine Apps nutzen dann wieder den Namensdienst deines Netzes.</td></tr>
+<tr><th scope="row">So beendest du es</th><td>Schalte das Pacing aus. In einem Netz, das einen Namensdienst nennt, geschieht es nie.</td></tr>
 </table>
 <p>Data Pace selbst sendet nichts an Google und sieht nie, was Google speichert.</p>
 
@@ -153,7 +153,7 @@
 <h2>Deine Rechte</h2>
 <p>Nach der DSGVO hast du diese Rechte. Weil die App deine Daten nur auf deinem Telefon behält, übst du die meisten direkt in der App aus; für alles, was wir haben, etwa E-Mails, schreib uns an die Adresse oben.</p>
 <table>
-<tr><th scope="row">Auskunft, Art. 15</th><td>Erfahren, welche Daten über dich verarbeitet werden. In der App ist jede Zählung und Einstellung sichtbar und exportierbar.</td></tr>
+<tr><th scope="row">Auskunft, Art. 15</th><td>Erfahren, welche Daten über dich verarbeitet werden. In der App ist jede Zählung und Einstellung sichtbar, und die Zählungen lassen sich exportieren.</td></tr>
 <tr><th scope="row">Berichtigung, Art. 16</th><td>Falsche Daten korrigieren lassen.</td></tr>
 <tr><th scope="row">Löschung, Art. 17</th><td>Daten löschen lassen. In der App: Data Pace zurücksetzen oder deinstallieren.</td></tr>
 <tr><th scope="row">Einschränkung, Art. 18</th><td>Die Verarbeitung einschränken lassen, solange ein Streit geklärt wird.</td></tr>

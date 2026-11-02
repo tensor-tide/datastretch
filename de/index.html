@@ -54,10 +54,10 @@
   <div>
     <div class="eyebrow">Für Android</div>
     <h1>Damit deine mobilen Daten den ganzen Monat reichen.</h1>
-    <p class="lede">Data Pace behält dein Datenbudget im Blick und drosselt Downloads sanft nach den Regeln, die du für jede App festlegst, sobald du zu schnell verbrauchst. So kommst du mit Daten übrig ans Ende des Zyklus, statt in der dritten Woche gedrosselt zu werden.</p>
+    <p class="lede">Data Pace behält dein Datenbudget im Blick und drosselt Downloads sanft, sobald du zu schnell verbrauchst, bis du wieder im Plan bist. Der Auto-Modus wählt das Tempo nach deinem Budget, und für jede App kannst du eigene Regeln festlegen. So kommst du mit Daten übrig ans Monatsende, statt in der dritten Woche gedrosselt zu werden.</p>
     <div class="cta">
-      <!-- TODO: echte Play-Store-URL eintragen -->
-      <a class="button" href="https://play.google.com/store/apps/details?id=TODO&amp;hl=de">Jetzt bei Google Play</a>
+      <!-- Die App ist im geschlossenen Test; der Eintrag ist noch nicht öffentlich. Danach ein Link auf https://play.google.com/store/apps/details?id=app.datapace&hl=de -->
+      <span class="button" aria-disabled="true">Bald bei Google Play</span>
       <a class="button ghost" href="../privacy/#de">Datenschutzerklärung lesen</a>
     </div>
   </div>
@@ -95,7 +95,7 @@
   <div class="features">
     <div><h3>Verbrauch pro App</h3><p>Mobile Daten pro App, heute und mit 13 Monaten Verlauf, gespeichert auf dem Telefon.</p></div>
     <div><h3>Tempolimits und Regeln</h3><p>Lege Tempolimits und Regeln für jede App fest, damit die wichtigen weiter funktionieren.</p></div>
-    <div><h3>Hilfreiche Benachrichtigungen</h3><p>Ein Hinweis, wenn sich das Tempo ändert oder ein neuer Zyklus beginnt. Jede Art lässt sich abschalten.</p></div>
+    <div><h3>Hilfreiche Benachrichtigungen</h3><p>Ein Hinweis, wenn sich das Tempo ändert oder ein neuer Zyklus beginnt. Du entscheidest, welche Arten du bekommst.</p></div>
     <div><h3>Ziele pro App</h3><p>Optional: sieh, mit welchen Internet-Hosts jede App spricht und wie viele Daten an jeden gingen.</p></div>
     <div><h3>Deinen Monat teilen</h3><p>Lass ein Bild deines Monats oder deiner Woche in Daten zeichnen und teile es, mit oder ohne Mengen.</p></div>
     <div><h3>CSV-Export</h3><p>Speichere deine Zählungen als Tabellendatei in deinem Download-Ordner.</p></div>
@@ -111,7 +111,7 @@
       <tr><th scope="row">Analyse oder Werbung?</th><td class="no">Keine</td><td>Keine Software von Dritten, die irgendwohin berichtet.</td></tr>
       <tr><th scope="row">Ein Server von uns?</th><td class="no">Keiner</td><td>Das VPN existiert nur in deinem Telefon. Dein Datenverkehr läuft nie über uns.</td></tr>
       <tr><th scope="row">Wo sind meine Daten?</th><td class="yes">Auf deinem Telefon</td><td>Vom Cloud-Backup ausgeschlossen. Zurücksetzen oder Deinstallieren löscht sie.</td></tr>
-      <tr><th scope="row">Äußere Dienste?</th><td class="yes">Einer</td><td>Solange das Pacing läuft, gehen die Namensabfragen deiner Apps an Google Public DNS.</td></tr>
+      <tr><th scope="row">Äußere Dienste?</th><td class="yes">Keine</td><td>Deine Apps nutzen weiter den Namensdienst deines Netzes, wie ohne Data Pace.</td></tr>
     </tbody>
   </table>
   <p class="soft">Die <a href="../privacy/#de">Datenschutzerklärung</a> beschreibt jedes Detail.</p>
@@ -120,10 +120,10 @@
 <section aria-labelledby="faq-h">
   <h2 id="faq-h">Fragen</h2>
   <details><summary>Warum braucht Data Pace ein VPN?</summary><p>Android erlaubt einer App, den Datenverkehr anderer Apps nur über ihre VPN-Schnittstelle zu drosseln. Das VPN von Data Pace läuft vollständig auf dem Telefon: Der Datenverkehr geht durch die App direkt zu deinem Anbieter oder WLAN, nie über einen Server.</p></details>
-  <details><summary>Kann ich weiterhin ein anderes VPN nutzen?</summary><p>Android erlaubt nur ein VPN gleichzeitig. Solange das Pacing läuft, kann also keine andere VPN-App laufen.</p></details>
+  <details><summary>Kann ich weiterhin ein anderes VPN nutzen?</summary><p>Android erlaubt nur eine VPN-App gleichzeitig. Solange eine andere VPN-App an ist, zählt Data Pace weiter, kann aber nichts drosseln.</p></details>
   <details><summary>Liest die App meinen Datenverkehr?</summary><p>Keine Inhalte. Sie liest nur, was das Pacing braucht: welche App eine Verbindung geöffnet hat, die Adresse, die Mengen und wie lange Namensabfragen dauern. Hostnamen liest sie nur, wenn du Ziele pro App einschaltest.</p></details>
   <details><summary>Was passiert nach einem Neustart?</summary><p>War das Pacing an, läuft es nach einem Neustart oder einem App-Update von selbst weiter.</p></details>
-  <details><summary>Zählt die App auch WLAN?</summary><p>Data Pace zählt deine mobilen Daten, denn die begrenzt dein Tarif.</p></details>
+  <details><summary>Zählt die App auch WLAN?</summary><p>Data Pace zählt deine mobilen Daten, denn die begrenzt dein Tarif. Ist auch dein WLAN begrenzt, kannst du in den Einstellungen „WLAN wie mobile Daten behandeln“ einschalten.</p></details>
 </section>
 </main>
 
