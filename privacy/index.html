@@ -8,12 +8,12 @@
 <ul>
 <li><strong>Mobile data counts per app.</strong> With the usage access permission, Data Pace reads Android's own network statistics to count how much mobile data each app used, today and over the past cycles. It keeps this history for 13 months in its own database on your phone, then deletes older records.</li>
 <li><strong>Your settings.</strong> The data budget, the cycle, speed limits and rules for apps, notification choices and the appearance.</li>
-<li><strong>Destinations per app, only if you switch it on.</strong> An optional setting in Settings records which internet hosts each app talks to during the current cycle. It is off by default and stays on your phone.</li>
+<li><strong>Destinations per app, only if you switch it on.</strong> An optional setting in Settings records which internet hosts each app talks to during the current cycle. To learn the host, the app reads the server name at the start of each encrypted connection and nothing else. It is off by default, the names stay on your phone, and they are deleted when the cycle ends or when you switch it off.</li>
 <li><strong>A support log.</strong> A short technical log of what the app did. It contains no app names, no amounts and no budget.</li>
 </ul>
 
 <h2>How pacing works</h2>
-<p>To slow or hold back downloads, Data Pace runs a local VPN on your phone. Android asks for your consent before it starts. The VPN exists only inside the phone: your traffic passes through the app to the internet exactly as before, through your carrier or Wi-Fi, and never through any server of ours. Data Pace does not read, change or store the content of your traffic.</p>
+<p>To slow or hold back downloads, Data Pace runs a local VPN on your phone. Android asks for your consent before it starts. The VPN exists only inside the phone: your traffic passes through the app to the internet exactly as before, through your carrier or Wi-Fi, and never through any server of ours. Data Pace does not read, change or store the content of your traffic. With destinations switched off, it looks at nothing but the addresses it needs to forward a connection.</p>
 
 <h2>What leaves your phone, and only when you choose</h2>
 <ul>
@@ -26,7 +26,7 @@
 <ul>
 <li><strong>Usage access</strong> to count mobile data per app.</li>
 <li><strong>VPN</strong> (asked by Android) to pace traffic on the phone.</li>
-<li><strong>Notifications</strong> to tell you about speed changes, the new month and similar events. Each kind can be switched off in the app.</li>
+<li><strong>Notifications</strong> to tell you about speed changes, the new month and similar events. Each of these kinds can be switched off in the app. Two cannot: the ongoing notification, which Android requires while pacing is on, and the notice that pacing stopped.</li>
 <li><strong>Run at startup</strong> so pacing resumes after a reboot if it was on.</li>
 </ul>
 <p>The app needs internet access only so that your apps' traffic can pass through the local VPN. It makes no connection of its own.</p>
@@ -50,12 +50,12 @@
 <ul>
 <li><strong>Mobile Daten pro App.</strong> Mit der Berechtigung für den Nutzungszugriff liest Data Pace Androids eigene Netzwerkstatistik, um zu zählen, wie viele mobile Daten jede App verbraucht hat, heute und in den vergangenen Zyklen. Diesen Verlauf behält die App 13 Monate in ihrer eigenen Datenbank auf deinem Telefon und löscht ältere Einträge dann.</li>
 <li><strong>Deine Einstellungen.</strong> Das Datenbudget, der Zyklus, Tempolimits und Regeln für Apps, die Wahl der Benachrichtigungen und das Erscheinungsbild.</li>
-<li><strong>Ziele pro App, nur wenn du es einschaltest.</strong> Eine optionale Einstellung hält fest, mit welchen Internet-Hosts jede App im laufenden Zyklus spricht. Sie ist standardmäßig aus und bleibt auf deinem Telefon.</li>
+<li><strong>Ziele pro App, nur wenn du es einschaltest.</strong> Eine optionale Einstellung hält fest, mit welchen Internet-Hosts jede App im laufenden Zyklus spricht. Um den Host zu erfahren, liest die App am Anfang jeder verschlüsselten Verbindung den Servernamen und sonst nichts. Sie ist standardmäßig aus, die Namen bleiben auf deinem Telefon, und sie werden gelöscht, wenn der Zyklus endet oder du die Einstellung ausschaltest.</li>
 <li><strong>Ein Support-Protokoll.</strong> Ein kurzes technisches Protokoll dessen, was die App getan hat. Es enthält keine App-Namen, keine Mengen und kein Budget.</li>
 </ul>
 
 <h2>Wie das Pacing funktioniert</h2>
-<p>Um Downloads zu drosseln oder zurückzuhalten, betreibt Data Pace ein lokales VPN auf deinem Telefon. Android fragt dich um Zustimmung, bevor es startet. Das VPN existiert nur im Telefon: dein Datenverkehr läuft durch die App ins Internet, genau wie zuvor über deinen Anbieter oder dein WLAN, und nie über einen Server von uns. Data Pace liest, verändert oder speichert den Inhalt deines Datenverkehrs nicht.</p>
+<p>Um Downloads zu drosseln oder zurückzuhalten, betreibt Data Pace ein lokales VPN auf deinem Telefon. Android fragt dich um Zustimmung, bevor es startet. Das VPN existiert nur im Telefon: dein Datenverkehr läuft durch die App ins Internet, genau wie zuvor über deinen Anbieter oder dein WLAN, und nie über einen Server von uns. Data Pace liest, verändert oder speichert den Inhalt deines Datenverkehrs nicht. Mit ausgeschalteten Zielen schaut sie auf nichts als die Adressen, die sie zum Weiterleiten einer Verbindung braucht.</p>
 
 <h2>Was dein Telefon verlässt, und nur wenn du es willst</h2>
 <ul>
@@ -68,7 +68,7 @@
 <ul>
 <li><strong>Nutzungszugriff</strong>, um mobile Daten pro App zu zählen.</li>
 <li><strong>VPN</strong> (von Android abgefragt), um den Datenverkehr auf dem Telefon zu drosseln.</li>
-<li><strong>Benachrichtigungen</strong>, um dich über Geschwindigkeitswechsel, den neuen Monat und Ähnliches zu informieren. Jede Art lässt sich in der App abschalten.</li>
+<li><strong>Benachrichtigungen</strong>, um dich über Geschwindigkeitswechsel, den neuen Monat und Ähnliches zu informieren. Jede dieser Arten lässt sich in der App abschalten. Zwei nicht: die dauerhafte Benachrichtigung, die Android verlangt, solange das Pacing an ist, und der Hinweis, dass das Pacing gestoppt wurde.</li>
 <li><strong>Beim Start ausführen</strong>, damit das Pacing nach einem Neustart weiterläuft, wenn es an war.</li>
 </ul>
 <p>Internetzugriff braucht die App nur, damit der Datenverkehr deiner Apps durch das lokale VPN laufen kann. Sie baut keine eigene Verbindung auf.</p>
